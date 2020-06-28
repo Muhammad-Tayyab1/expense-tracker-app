@@ -24,7 +24,7 @@ export const AddTransaction = () => {
          <form onSubmit={onSubmit}>
              <div className="form-control">
                  <label htmlFor="text">Text</label>
-                 <input type="text" value={text} onChange={(e) => setText(e.target.value)}
+                 <input type="text" required value={text} onChange={(e) => setText(e.target.value)}
                   placeholder="Enter product name..."/>
              </div>
              <div className="form-control">
@@ -32,7 +32,7 @@ export const AddTransaction = () => {
                  Amount <br />
                  (negative - expense, positive - income)</label>  
 
-                 <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)}
+                 <input type="number" required value={amount} onChange={(e) => setAmount(e.target.value)}
                  placeholder="Enter price..." />
 
              </div>
